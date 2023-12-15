@@ -35,8 +35,8 @@ body {
 .kofe {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .fam_ima {
@@ -79,7 +79,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
+.st1 h1, .st2 h2 {
+    padding: 2%;
+}
 .item {
     position: relative;
 }

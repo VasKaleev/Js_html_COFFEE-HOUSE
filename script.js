@@ -45,12 +45,33 @@ checkboxes.forEach((checkbox) => {
 quantityInputs.forEach((input) => {
     input.addEventListener('change', calcAmount);
 });
+
+/*for (const product of products) {
+    let checkboxElement = product.querySelector('input[type="checkbox"]');
+    let amountElement = product.querySelector('input[type="number"]');        
+        if (checkboxElement.checked) {
+            if (amountElement.value <= 0 || amountElement.value > 100) {
+            amountElement.value = 1;
+            }
+        sum += parseInt(checkboxElement.dataset.price) * parseInt(amountElement.value);        
+        }        
+        else {       
+        amountElement.value = 0;        
+        }  
+    resultElement.textContent = sum; }    
+*/
+
 function calcAmount() {
     totalAmount = 0;
     Object.keys(products).forEach((key) => {
         let product = products[key]
         if (product.checkbox.checked) {
+            if (product.quantityInput.value <= 0 || product.quantityInput.value > 100) {
+                product.quantityInput.value = 1;
+            }
             totalAmount += (parseInt(product.quantityInput.value) * parseInt(product.checkbox.value));
+        } else {
+            product.quantityInput.value = 0;
         }
         if (fam.value) {
             rez.textContent = `Заказчик ` + `${fam.value} ${ima.value}`
