@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>COFFEE HOUSE</h1>
+        </div>
+        <div class="fam_ima">
+            <div>
+                <p>Введите Фамилию</p>
+                <input type="text" name="fa" class="fam" placeholder="Введите Фамилию">
+            </div>
+            <div>
+                <p>Введите Имя</p>
+                <input type="text" name="im" class="ima" placeholder="Введите Имя">
+            </div>
+        </div>
+        <div class="kofe">
+            <div class="st1">
+                <div class="item">
+                    <input class="checkbox" id="checkbox1" type="checkbox" name="goods" value="80">
+                    <label for="checkbox1">Экспрессо 80р.</label>
+                    <input id="espresso" type="number" min="0" placeholder="0" value="0">
+                </div>
+                <div class="item">
+                    <input class="checkbox" id="checkbox2" type="checkbox" name="goods" value="110">
+                    <label for="checkbox2">Американо 110р.</label>
+                    <input id="americano" type="number" min="0" placeholder="0" value="0">
+                </div>
+                <div class="item">
+                    <input class="checkbox" id="checkbox3" type="checkbox" name="goods" value="120">
+                    <label for="checkbox3">Латте 120р.</label>
+                    <input id="latte" type="number" min="0" placeholder="0" value="0">
+                </div>
+                <div class="item">
+                    <input class="checkbox" id="checkbox4" type="checkbox" name="goods" value="90">
+                    <label for="checkbox4">Капучино 90р.</label>
+                    <input id="cappuccino" type="number" min="0" placeholder="0" value="0">
+                </div>
+
+            </div>
+            <div class="st2">
+                <div class="item">
+                    <input class="checkbox" id="checkbox5" type="checkbox" name="goods" value="80">
+                    <label for="checkbox1">Шоколадный кекс 80р.</label>
+                    <input id="chocolate_muffin" type="number" min="0" placeholder="0" value="0">
+                </div>
+                <div class="item">
+                    <input class="checkbox" id="checkbox6" type="checkbox" name="goods" value="90">
+                    <label for="checkbox2">Черничный кекс 90р.</label>
+                    <input id="blueberry_muffin" type="number" min="0" placeholder="0" value="0">
+                </div>
+                <div class="item">
+                    <input class="checkbox" id="checkbox7" type="checkbox" name="goods" value="100">
+                    <label for="checkbox3">Яблочный тарт 100р.</label>
+                    <input id="apple_tart" type="number" min="0" placeholder="0" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <p><span class="rezult"></span></p>
+                <p>Итого: <span class="rezult1"></span></p>
+            </div>
+            <div>
+                <button class="btn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

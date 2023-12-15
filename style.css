@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fonts';
+}
+
+.container {
+    width: 1440px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #c7bd99;
+    font-size: 18px;
+}
+
+body {
+    background-image: url(cofe.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.header {
+    /* margin: 20px 0; */
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: floralwhite;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.kofe {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.fam_ima {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.st1 {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+}
+
+.st2 {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+}
+
+.btn {
+    margin: 5px 0;
+    padding: 10px 20px;
+    background-color: #488d0e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    position: relative;
+}
+
+input[type="number"] {
+    width: 50px;
+    margin-left: 10px;
+    padding: 2px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    right: 90px;
+
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.rezult1 {
+    padding-left: 10px;
+}
+
+@font-face {
+    /* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)  */
+    font-family: "Fonts";
+    /*адрес шрифта и тип  */
+    src: url("/Fonts/stolzl_light.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
